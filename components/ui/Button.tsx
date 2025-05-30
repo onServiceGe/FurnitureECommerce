@@ -1,7 +1,12 @@
 import { IButton } from "@/lib/types/button";
 import React from "react";
 
-const Button: React.FC<IButton> = ({ bg, color, font, children }: IButton) => {
+const Button: React.FC<IButton> = ({
+  bg = "transparent",
+  color,
+  font,
+  children,
+}: IButton) => {
   return (
     <button
       style={
