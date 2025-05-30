@@ -6,6 +6,7 @@ const Button: React.FC<IButton> = ({
   color,
   font,
   children,
+  className = "",
 }: IButton) => {
   return (
     <button
@@ -16,7 +17,7 @@ const Button: React.FC<IButton> = ({
           fontFamily: font,
         } as React.CSSProperties
       }
-      className={`cursor-pointer px-5 py-2 rounded-md min-w-[200px] w-auto bg-[var(--buttonBg)] text-[var(--buttonColor)]`}
+      className={`cursor-pointer px-5 py-2 rounded-md min-w-[200px] w-auto bg-[var(--buttonBg)] text-[var(--buttonColor)] ${className}`}
     >
       {children}
     </button>

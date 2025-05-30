@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 import React from "react";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="relative ">
       <div className="container flex justify-between items-center pt-30 flex-wrap">

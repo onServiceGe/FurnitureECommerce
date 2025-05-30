@@ -3,4 +3,3 @@ export interface INavLink {
   href: string;
 }
 
-export interface IProduct {

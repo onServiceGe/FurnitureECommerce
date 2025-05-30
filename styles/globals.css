@@ -4,6 +4,9 @@
   --color-paragraph: #737373;
   --color-white: #fff;
   --color-black: #000;
+  --color-card-title: #1e1e1ecc;
+  --color-card-paragraph: #1e1e1e66;
+  --color-sale-price: #f8c9ca;
 
   --font-mainRegular: "mainRegular";
   --font-mainMedium: "mainMedium";
@@ -19,6 +22,20 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+img,
+.no-select * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 @media (min-width: 768px) {
   .container {
