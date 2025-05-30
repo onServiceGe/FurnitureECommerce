@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 import NavIcons from "./NavIcons";
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white">
+    <nav className="bg-white fixed top-0 left-0 right-0 z-10">
       <div className="container py-4 rounded-md flex justify-between items-center">
         <Button
           bg="var(--color-main)"

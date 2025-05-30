@@ -3,4 +3,5 @@ export interface IButton {
   bg?: string;
   color?: string;
   font?: string;
+  className?: string;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import heart from "@/lib/icons/heart.svg";
-import cart from "@/lib/icons/shopping-cart.svg";
+import heart from "@/public/assets/icons/heart.svg";
+import cart from "@/public/assets/icons/shopping-cart.svg";
 import Image from "next/image";
 const NavIcons: React.FC = () => {
   return (
