@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../ui/Button";
 import NavLinks from "./NavLinks";
+import NavIcons from "./NavIcons";
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-white">
@@ -13,6 +14,7 @@ const Navbar: React.FC = () => {
           ონ დიზაინი
         </Button>
         <NavLinks />
+        <NavIcons />
       </div>
     </nav>
   );
