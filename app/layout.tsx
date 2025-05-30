@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
+import Navbar from "@/components/navbar/Navbar";
 
 const mainRegular = localFont({
   variable: "--font-mainRegular",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${mainRegular.variable} ${mainMedium.variable} ${mainSemiBold.variable} ${mainBold.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

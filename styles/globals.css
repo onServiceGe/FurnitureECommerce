@@ -1,7 +1,52 @@
 @import "tailwindcss";
 @theme {
+  --color-main: #e7494c;
+  --color-white: #fff;
+  --color-black: #000;
+
   --font-mainRegular: "mainRegular";
   --font-mainMedium: "mainMedium";
   --font-mainSemiBold: "mainSemiBold";
   --font-mainBold: "mainBold";
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body {
+  background-color: #f8f8f8;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
