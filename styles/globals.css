@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@theme {
+  --font-mainRegular: "mainRegular";
+  --font-mainMedium: "mainMedium";
+  --font-mainSemiBold: "mainSemiBold";
+  --font-mainBold: "mainBold";
+}
