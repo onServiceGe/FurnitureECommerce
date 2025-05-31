@@ -14,8 +14,9 @@ const CardSlider: React.FC<ICardSlider & SliderCardListProps> = ({
     <section className="container">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center justify-center gap-4">
-          <div className="flex items-center justify-center bg-main rounded-md w-[40px] h-[40px]">
-            <Image src={icon} alt={`${title} icon`} width={24} height={24} />
+          <div className="flex items-center justify-center bg-main rounded-md w-[40px] h-[40px] text-white">
+            {/* <Image src={icon} alt={`${title} icon`} width={24} height={24} /> */}
+            {icon}
           </div>
           <h2 className="text-2xl font-mainBold">{title}</h2>
         </div>
