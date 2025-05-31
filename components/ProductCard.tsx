@@ -1,11 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import news from "@/public/assets/images/news-cards/news1.png";
-import heart from "@/public/assets/icons/heart.svg";
-import cart from "@/public/assets/icons/shopping-cart.svg";
+import { HeartIcon, CartIcon } from "@/lib/Icons";
 import { IProductCard } from "@/lib/types/product-card";
 
-const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
+const ProductCard: React.FC<IProductCard> = ({
+  id,
+  title,
+  height,
+  width,
+  image,
+}) => {
   return (
     <div className="min-w-[250px] bg-white rounded-md no-select">
       <div className="flex justify-center">
@@ -37,11 +41,11 @@ const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
             </h4>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-[#F8F8F8] rounded-md p-1 cursor-pointer">
-              <Image src={heart} alt="heart icon" />
+            <div className="bg-main/10 rounded-md p-1 cursor-pointer">
+              <HeartIcon className="w-6 h-6 text-main" />
             </div>
             <div className="bg-[#F8F8F8] rounded-md p-1 cursor-pointer">
-              <Image src={cart} alt="cart icon" />
+              <CartIcon className="w-6 h-6 text-[#333333]" />
             </div>
           </div>
         </div>
@@ -50,4 +54,4 @@ const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
   );
 };
 
-export default NewsCard;
+export default ProductCard;

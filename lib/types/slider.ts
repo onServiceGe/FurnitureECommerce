@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import { JSX, ReactNode, SVGProps } from "react";
 
 export interface ICardSlider {
   href: string;
-  icon: string;
+  icon: JSX.Element;
   title: string;
 }
 
