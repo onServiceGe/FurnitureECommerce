@@ -3,16 +3,11 @@ import React from "react";
 import news from "@/public/assets/images/news-cards/news1.png";
 import heart from "@/public/assets/icons/heart.svg";
 import cart from "@/public/assets/icons/shopping-cart.svg";
+import { IProductCard } from "@/lib/types/product-card";
 
-interface NewsCardProps {
-  id: number;
-  title: string;
-  height: string;
-  width: string;
-  image: any;
-}
 
-const NewsCard: React.FC<NewsCardProps> = ({ title, height, width, image }) => {
+
+const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
   return (
     <div className="min-w-[250px] bg-white rounded-md no-select">
       <div className="flex justify-center">
@@ -44,10 +39,10 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, height, width, image }) => {
             </h4>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-[#F8F8F8] rounded-md p-1">
+            <div className="bg-[#F8F8F8] rounded-md p-1 cursor-pointer">
               <Image src={heart} alt="heart icon" />
             </div>
-            <div className="bg-[#F8F8F8] rounded-md p-1">
+            <div className="bg-[#F8F8F8] rounded-md p-1 cursor-pointer">
               <Image src={cart} alt="cart icon" />
             </div>
           </div>
