@@ -1,8 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import NewsCard from "./NewsCard";
+import NewsCard from "../home/news/NewsCard";
 import { newsCards } from "@/api/news-cards";
-const NewsCardList: React.FC = () => {
+import { SliderCardListProps } from "@/lib/types/slider";
+
+const SliderCardList: React.FC<SliderCardListProps> = ({ children, className = "" }) => {
   const sliderRef = useRef<HTMLDivElement>(null);
   let isDown = false;
   let startX: number;
@@ -40,20 +42,19 @@ const NewsCardList: React.FC = () => {
       sliderRef.current.scrollLeft = scrollLeft - walk;
     }
   };
+
   return (
     <div
       ref={sliderRef}
-      className="flex gap-4 overflow-x-auto cursor-grab py-8 no-scrollbar"
+      className={`flex gap-4 overflow-x-auto cursor-grab py-8 no-scrollbar ${className}`}
       onMouseDown={handleMouseDown}
       onMouseLeave={handleMouseLeave}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
     >
-      {newsCards.map((card) => (
-        <NewsCard key={card.id} {...card} />
-      ))}
+      {children}
     </div>
   );
 };
 
-export default NewsCardList;
+export default SliderCardList;
