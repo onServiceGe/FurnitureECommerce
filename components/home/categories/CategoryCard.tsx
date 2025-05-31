@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../ui/Button";
+import Button from "@/components/ui/Button";
 import { ICategoryCard } from "@/lib/types/categories";
 import Image from "next/image";
 
@@ -26,7 +26,13 @@ const CategoryCard: React.FC<ICategoryCard> = ({
         </Button>
       </div>
       <div>
-        <Image width={180} height={168} src={image} alt={title + " image"} />
+        <Image
+          width={180}
+          height={168}
+          src={image}
+          alt={title + " image"}
+          className="rounded-br-md"
+        />
       </div>
     </div>
   );

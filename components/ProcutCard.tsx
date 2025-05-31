@@ -5,8 +5,6 @@ import heart from "@/public/assets/icons/heart.svg";
 import cart from "@/public/assets/icons/shopping-cart.svg";
 import { IProductCard } from "@/lib/types/product-card";
 
-
-
 const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
   return (
     <div className="min-w-[250px] bg-white rounded-md no-select">
@@ -16,7 +14,7 @@ const NewsCard: React.FC<IProductCard> = ({ title, height, width, image }) => {
           alt={title}
           width={130}
           height={130}
-          className=" max-h-[130px] max-w-[130px] object-cover"
+          className=" max-h-[130px] max-w-[130px] object-cover "
         />
       </div>
       <div className="p-4">
