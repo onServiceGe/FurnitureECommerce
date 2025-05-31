@@ -1,0 +1,88 @@
+import news1 from "@/public/assets/images/news-cards/news1.png";
+import news2 from "@/public/assets/images/news-cards/news2.png";
+export const bestSellerCards = [
+  {
+    id: 1,
+    title: "ყავის მაგიდა",
+    height: "144",
+    width: "60",
+    image: news2,
+  },
+  {
+    id: 2,
+    title: "ყავის მაგიდა",
+    height: "120",
+    width: "80",
+    image: news2,
+  },
+  {
+    id: 3,
+    title: "ყავის მაგიდა",
+    height: "100",
+    width: "100",
+    image: news2,
+  },
+  {
+    id: 4,
+    title: "ყავის მაგიდა",
+    height: "90",
+    width: "90",
+    image: news1,
+  },
+  {
+    id: 5,
+    title: "ყავის მაგიდა",
+    height: "150",
+    width: "70",
+    image: news1,
+  },
+  {
+    id: 6,
+    title: "ყავის მაგიდა",
+    height: "130",
+    width: "65",
+    image: news2,
+  },
+  {
+    id: 7,
+    title: "ყავის მაგიდა",
+    height: "110",
+    width: "75",
+    image: news1,
+  },
+  {
+    id: 8,
+    title: "ყავის მაგიდა",
+    height: "140",
+    width: "85",
+    image: news2,
+  },
+  {
+    id: 9,
+    title: "ყავის მაგიდა",
+    height: "125",
+    width: "95",
+    image: news1,
+  },
+  {
+    id: 10,
+    title: "ყავის მაგიდა",
+    height: "135",
+    width: "55",
+    image: news2,
+  },
+  {
+    id: 11,
+    title: "ყავის მაგიდა",
+    height: "115",
+    width: "70",
+    image: news1,
+  },
+  {
+    id: 12,
+    title: "ყავის მაგიდა",
+    height: "145",
+    width: "80",
+    image: news2,
+  },
+];

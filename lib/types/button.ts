@@ -4,4 +4,5 @@ export interface IButton {
   color?: string;
   font?: string;
   className?: string;
+  sm?: boolean;
 }
